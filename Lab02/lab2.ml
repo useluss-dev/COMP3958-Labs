@@ -39,10 +39,10 @@ let rec fold_while fn (acc : 'acc) lst =
 let fold_left fn (acc : 'acc) l =
   fold_while (fun acc x -> Some (fn acc x)) acc l
 
-(** [sum_while_less_than n lst] adds all the values in [lst] from left to right
+(** [sum_while_less_than n lst ] adds all the values in [lst] from left to right
     until the sum is no longer less than [n]. *)
-let sum_while_less_than n =
+let sum_while_less_than n lst =
   let add (count, acc) x =
     match acc + x with sum when sum < n -> Some (count + 1, sum) | _ -> None
   in
-  fold_while add (0, 0)
+  fold_while add (0, 0) lst
