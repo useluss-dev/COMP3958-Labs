@@ -1,5 +1,0 @@
-"Rule: ocaml dependencies ml (%=records )": "\212\031\023hI\245}\250\r\204\131\204\185\190o2"
-"Rule: ocaml: ml & cmi -> cmx & o (%=records )": "$T\019_s$\193\160\128\212\254\160>?j\027"
-"Rule: ocaml: ml -> cmo & cmi (%=records )": "\191S3\202\167\134\207#\190\170\006~\251\127\180?"
-"Resource: /Users/ryanfiset/Repos/BCIT/COMP-3958/Labs/Lab04/records.ml": "\177j-\002\155\193\148=4\196\1524J\000\231\017"
-"Rule: ocaml: cmx* & o* -> native (%=records )": "Z\169\023\142\146\166f#\211\147q\148\248\167K\""
