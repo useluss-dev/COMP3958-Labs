@@ -1,0 +1,6 @@
+homer simpson 25 # bad at nuclear engineering
+ned flander 12abc !! invalid
+waylon smithers 100 ! high score
+chad smithers 100 ! high score
+gary chalmers 5
+monty burns
