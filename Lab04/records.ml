@@ -161,8 +161,8 @@ let test_sort_records =
   let unsorted_2 =
     [
       { firstname = "ned"; lastname = "flanders"; score = 90 };
-      { firstname = "rod"; lastname = "flanders"; score = 90 };
-      { firstname = "todd"; lastname = "flanders"; score = 90 };
+      { firstname = "rod"; lastname = "landers"; score = 90 };
+      { firstname = "todd"; lastname = "anders"; score = 90 };
     ]
   in
 
@@ -190,9 +190,9 @@ let test_sort_records =
   assert (
     sort_records unsorted_2
     = [
+        { firstname = "todd"; lastname = "anders"; score = 90 };
         { firstname = "ned"; lastname = "flanders"; score = 90 };
-        { firstname = "rod"; lastname = "flanders"; score = 90 };
-        { firstname = "todd"; lastname = "flanders"; score = 90 };
+        { firstname = "rod"; lastname = "landers"; score = 90 };
       ]);
   (* firstname ascending *)
   assert (
