@@ -1,6 +1,0 @@
-"Resource: /Users/ryanfiset/Repos/BCIT/COMP-3958/Labs/Lab05/kvtree.ml": "\165\136\201w\146\135\202\201Z\190\196\160\133\212\185\252"
-"Rule: ocaml: mli -> cmi (%=kvtree )": "\189l\002i\132%|sM\186\154\024KM\244$"
-"Rule: ocaml dependencies mli (%=kvtree )": "p\136\016\198\198y\153\023@\134\160D\246\203\215;"
-"Rule: ocaml dependencies ml (%=kvtree )": "\195\006\018\210=\224\005\143?\1988\206\251P]w"
-"Rule: ocaml: ml & cmi -> cmo (%=kvtree )": "\232\167e\251IG\161\220\238\016\158F\239\229Zi"
-"Resource: /Users/ryanfiset/Repos/BCIT/COMP-3958/Labs/Lab05/kvtree.mli": "\165\136\201w\146\135\202\201Z\190\196\160\133\212\185\252"
