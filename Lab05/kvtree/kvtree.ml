@@ -92,8 +92,11 @@ module Make (Ord : OrderedType) = struct
       ascending order. *)
   let to_list t =
     let rec aux acc t =
-      let k, v = largest t in
-      match t with L -> acc | _ -> aux ((k, v) :: acc) (delete k t)
+      match t with
+      | L -> acc
+      | _ ->
+          let k, v = largest t in
+          aux ((k, v) :: acc) (delete k t)
     in
     aux [] t
 
@@ -101,5 +104,5 @@ module Make (Ord : OrderedType) = struct
     match t with
     | L -> "#"
     | N (k, v, l, r) ->
-        "^(" ^ f (k, v) ^ "," ^ to_string f l ^ "," ^ to_string f r ^ ")"
+        "^(" ^ f (k, v) ^ ", " ^ to_string f l ^ ", " ^ to_string f r ^ ")"
 end
