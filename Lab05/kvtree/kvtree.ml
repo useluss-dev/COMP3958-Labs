@@ -90,13 +90,10 @@ module Make (Ord : OrderedType) = struct
 
   (** [to_list t] converts the given tree [t] into a list of key value pairs in
       ascending order. *)
-  let to_list t =
-    let rec aux acc t =
-      match t with
+  let rec to_list t =
+    let rec aux acc = function
       | L -> acc
-      | _ ->
-          let k, v = largest t in
-          aux ((k, v) :: acc) (delete k t)
+      | N (k, v, l, r) -> aux ((k, v) :: aux acc r) l
     in
     aux [] t
 
