@@ -4,7 +4,7 @@ type 'a infstream = Cons of 'a * (unit -> 'a infstream)
 let rec from n = Cons (n, fun () -> from (n + 1))
 
 (** [take n s] creates a list of the first [n] elements of a given infinite
-    stream [s]. **)
+    stream [s]. (used for testing) **)
 let rec take n (Cons (h, t)) = if n <= 0 then [] else h :: take (n - 1) (t ())
 
 (** [filter f s] filters out all elements in a given infinite stream [s] that
