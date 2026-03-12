@@ -6,8 +6,7 @@ let rec take n (Cons (h, t)) =
   if n <= 0 then [] else h :: take (n - 1) (Lazy.force t)
 
 (** [exp_terms x] generates a stream of exponential function terms for a value
-    [x]. This calculation uses the fact that for the taylor series t_n+1 = t_n *
-    x / (n + 1)*)
+    [x]. *)
 let exp_terms x =
   let rec aux n term =
     Cons (term, lazy (aux (n + 1) (term *. x /. float_of_int (n + 1))))
